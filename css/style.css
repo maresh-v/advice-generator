@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/dm-sans/DMSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/dm-sans/DMSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/dm-sans/DMSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+/* Attribution: CSS Reset by Josh Comeau */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+:root {
+  font-size: 16px;
+}
+
+.advice-homepage {
+  height: fit-content;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "DM Sans", sans-serif;
+  background-color: hsl(218deg, 23%, 16%);
+}
+
+.attribution {
+  margin-top: 150px;
+  color: hsl(150deg, 100%, 66%);
+  text-align: center;
+}
+@media (max-width: 580px) {
+  .attribution {
+    margin-top: 10vw;
+    margin-bottom: 5vw;
+    font-size: 4vw;
+  }
+}
+
+.attribution > a {
+  color: hsl(150deg, 100%, 66%);
+}
+
+.advice-generator {
+  width: 540px;
+  height: fit-content;
+  margin-top: 20px;
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  border-radius: 1em;
+  box-shadow: 10px 10px 75px -50px #000;
+  box-sizing: border-box;
+  background-color: hsl(217deg, 19%, 24%);
+  font-family: DM Sans, sans-serif;
+}
+@media (max-width: 580px) {
+  .advice-generator {
+    width: 92vw;
+    height: fit-content;
+    padding: 10vw;
+    margin-bottom: 20vw;
+  }
+}
+.advice-generator__heading {
+  margin: 0 0;
+  font-size: 0.875em;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  color: hsl(150deg, 100%, 66%);
+}
+@media (max-width: 580px) {
+  .advice-generator__heading {
+    padding: 2em 0 0.75em 0;
+    font-size: 3.25vw;
+  }
+}
+.advice-generator__quote {
+  margin: 0.875em 0 1.5em 0;
+  display: flex;
+  align-items: center;
+  font-family: DM Sans, sans-serif;
+  font-size: 1.75rem;
+  color: hsl(193deg, 38%, 86%);
+  font-weight: 700;
+}
+@media (max-width: 580px) {
+  .advice-generator__quote {
+    margin-bottom: 1em;
+    font-size: 7.5vw;
+  }
+}
+.advice-generator__underline {
+  width: 100%;
+  height: 1em;
+  background-image: url(../images/pattern-divider-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 1.4375em;
+}
+@media (max-width: 580px) {
+  .advice-generator__underline {
+    background-image: url(../images/pattern-divider-mobile.svg);
+    margin-bottom: 3em;
+    box-sizing: content-box;
+  }
+}
+.advice-generator__button {
+  position: absolute;
+  width: 4.375em;
+  height: 4.375em;
+  bottom: -2.25em;
+  border: none;
+  border-radius: 100vmax;
+  background-color: hsl(150deg, 100%, 66%);
+  background-image: url(../images/icon-dice.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 35%;
+  cursor: pointer;
+  transition: 0.1s box-shadow;
+}
+.advice-generator__button:hover {
+  box-shadow: 0px 0px 30px 2px hsl(150deg, 100%, 66%);
+}
+@media (max-width: 580px) {
+  .advice-generator__button {
+    width: 15vw;
+    height: 15vw;
+    min-width: 4em;
+    min-height: 4em;
+  }
+  .advice-generator__button:hover {
+    box-shadow: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

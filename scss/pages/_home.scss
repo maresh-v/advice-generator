@@ -1,0 +1,29 @@
+@use '../abstracts' as abs;
+@use '../base';
+
+.advice-homepage{
+    height: fit-content;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Sans', sans-serif;
+    background-color: abs.$blue-dark;
+}
+
+.attribution{
+    margin-top: 150px;
+    color: abs.$green-neon;
+    text-align: center;
+
+    @include abs.sm{
+        margin-top: 10vw;
+        margin-bottom: 5vw;
+        font-size: 4vw;
+    }
+}
+
+.attribution > a{
+    color: abs.$green-neon;
+}
